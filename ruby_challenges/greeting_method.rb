@@ -9,7 +9,7 @@ def determine_current_hour
 end
 
 def greeting
-  get_name
+  name = get_name.chomp
   current_hour = determine_current_hour
   if current_hour >= 3 && current_hour < 12
     time = "morning"
